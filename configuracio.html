@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="David Martínez">
+  <meta name="keywords" content="practica,es liceu,quatre en ratlla, opcions">
+  <meta name="description" content="Configuracio quatre en ratlla">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main2.css">
+
+
+  <title>Opcions</title>
+</head>
+
+<body>
+  <header class="col-12">
+    <h1 class="col-6"><a href="#">Opcions</a></h1>
+    <nav class="col-6">
+      <ul >
+        <li><a href="index.html">Joc</a></li>
+        <li><a href="ajuda.html">Aprèn a jugar</a></li>
+        <li><a href="mapa.html">Mapa jugadors</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+        <li><a href="configuracio.html">Opcions</a></li>
+        <li><a href="altres.html">Altres</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="col-12, clear, centrat">
+    <script src="js/conf.js"></script>
+
+<section id="form">
+
+    <form  action="configuracio.html" method="post">
+
+      <ul class="formulari">
+        <p>Mode daltonics:</p>
+
+        <label for="dalTrue">Activat</label>
+        <input type="radio" id="dal" name="dal" value="true">
+        <label for="dalFalse">Desactivat</label>
+        <input type="radio" id="nodal" name="dal" value="false">
+      </ul>
+
+      <ul class="formulari">
+        <p>Tamany del taulell:</p>
+
+        <label for="taulellG">Gran</label>
+        <input type="radio" id="G" name="Tamany" value="800x800">
+        <label for="taulellM">Normal</label>
+        <input type="radio" id="M" name="Tamany" value="400x400">
+        <label for="taulellp">Petit</label>
+        <input type="radio" id="P" name="Tamany" value="200x200">
+
+      </ul>
+
+      <button type="submit" onclick="desa()">Guarda els canvis</button>
+    </form>
+  </section>
+
+  </main>
+  <a href="index.html"><img src="img/home.png" id="boto" ></a>
+
+
+  <footer>
+    <small>Pagina feta per David Martínez, 1r CFGS Es Liceu</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="David Martínez">
+  <meta name="keywords" content="practica,es liceu,quatre en ratlla">
+  <meta name="description" content="Altres plugins">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main2.css">
+  <link rel="stylesheet" href="css/slider-pro.min.css">
+
+
+  <title>Altres</title>
+</head>
+
+<body>
+  <header class="col-12">
+    <h1 class="col-6"><a href="#">Altres</a></h1>
+    <nav class="col-6">
+      <ul >
+        <li><a href="index.html">Joc</a></li>
+        <li><a href="ajuda.html">Aprèn a jugar</a></li>
+        <li><a href="mapa.html">Mapa jugadors</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+        <li><a href="configuracio.html">Opcions</a></li>
+        <li><a href="altres.html">Altres</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style media="screen">
+  </style>
+
+  <main class="col-12, clear">
+
+  <div class="slider-pro" id="slider_pro">
+
+    <div class="sp-slides">
+      <div class="sp-slide"><img src="img/1.jpg"></div>
+      <div class="sp-slide"><img src="img/2.jpg"></div>
+      <div class="sp-slide"><img src="img/3.jpg"></div>
+      <div class="sp-slide"><img src="img/4.jpg"></div>
+      <div class="sp-slide"><img src="img/5.jpg"></div>
+    </div>
+
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.sliderPro.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+		  //Slider Pro
+	    $( '#slider_pro' ).sliderPro({
+	      fullScreen: true,
+        aspectRatio: 0.95,
+	      arrows: true,
+	      buttons: false,
+	      waitForLayers: true,
+	      thumbnailWidth: 200,
+	      thumbnailHeight: 100,
+	      thumbnailPointer: true,
+	      autoplay: true,
+	      autoScaleLayers: false,
+	      breakpoints: {
+	        1000:{
+	          height: 450
+	        },
+	        800:{
+	          height: 500
+	        },
+	        500: {
+	          height: 600
+	        }
+	      }
+	    });
+	});
+	</script>
+
+  </main>
+
+  <a href="index.html"><img src="img/home.png" id="boto" ></a>
+
+  <footer>
+    <small>Pagina feta per David Martínez, 1r CFGS Es Liceu</small>
+  </footer>
+
+</body>
+</html>

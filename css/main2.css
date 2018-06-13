@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  text-align: justify;
+}
+a{
+  text-decoration: none;
+  color: #506f8e;
+}
+a:hover {
+  color: #aea4ad;
+}
+header{
+  padding: 10px;
+  background-color: #db9e43;
+  float: left;
+}
+nav{
+  float: left;
+}
+nav ul{
+  list-style-type: none;
+  float: right;
+}
+nav ul li {
+  margin: 10px;
+  float: left;
+}
+nav ul li:hover{
+  cursor: pointer;
+}
+header h1 {
+  float: left;
+  font-family: 'Abel', sans-serif;
+  text-shadow: 2px 2px #4ba395;
+}
+
+body {
+  margin: 0;
+
+  background: #eee4da;
+}
+
+main {
+  align-items: center;
+  padding: 10px;
+}
+
+.centrat{
+  display: block;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#form{
+  display: block;
+    text-align: center;
+}
+form{
+  display: inline-block;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+h2 {
+  font-family: 'Abel', sans-serif;
+}
+p{
+  padding: 5px;
+}
+p::first-letter{
+  font-size: 1.5em;
+}
+#mapa{
+  height: 500px;
+}
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 2px;
+  background-color: #eacc70;
+  font-family: 'Roboto Slab', serif;
+}
+#canvas {
+    margin: 0px auto;
+  }
+.formulari {
+  margin: 5px;
+}
+@keyframes casa {
+  0%{transform: scale(1.1);}
+  100%{transform: scale(2,2);}
+}
+
+#boto{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px;
+  animation-name: casa;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@media screen and (min-width: 680px) {
+  [class^="col"]{
+    width: 100%;
+    float: left;
+  }
+.clear{clear: both;}
+.col-1{width: 8.3333%;}
+.col-2{width: 16.6666%;}
+.col-3{width: 25%;}
+.col-4{width: 33.3333%;}
+.col-5{width: 41.6666%;}
+.col-6{width: 50%;}
+.col-7{width: 58.3333%;}
+.col-8{width: 66.6666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.3333%;}
+.col-11{width: 91.6666%;}
+.col-12{width: 100%;}
+}
+
+
+@media screen and (max-width: 679px){
+  [class^="col"]{
+    width: 100%;
+    float: left;
+
+  }
+}
